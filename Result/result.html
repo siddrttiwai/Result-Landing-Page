@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABES</title>
+    <link rel="shortcut icon" href="ABES.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <style>
+      body {
+        background-color: beige;
+      }
+      h1 {
+        color: brown;
+        font-size: xxx-large;
+        font-weight: bolder;
+        font-family: "Courier New", Courier, monospace;
+        margin-left: 50px;
+      }
+
+      hr {
+        border: solid 1px black;
+      }
+      .a {
+        display: inline;
+      }
+      li {
+        margin: 20px;
+      }
+      p {
+        display: inline;
+        margin: 100px;
+      }
+      table {
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 120px;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 20px;
+      }
+
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <br /><br />
+    <div style="text-align: center;">
+    <img src="AKTU.png" height="100" width="100" />
+    <img src="AICTE.webp" height="100" width="100" style="margin-left: 50px" />
+    <img src="ABES.png" height="100" width="75" style="margin-left: 50px" />
+    <img src="NAAC.png" height="100" width="100" style="margin-left: 50px" />
+    <img src="nirf.png" height="100" width="100" style="margin-left: 50px" />
+    <img src="NBA.png" height="100" width="100" style="margin-left: 50px" />
+    </div>
+    <br><br><br><br>
+    <h1 style="text-decoration: underline; text-align:center">
+      ABES ENGINEERING COLLEGE
+      
+    </h1>
+    <br /><br><br><br><br><br>
+    <table style="width: 90%" >
+      <h2 style="text-align: center">ENTER STUDENT DETAILS (2023-2024):</h2>
+      <br />
+      <tr>
+      <tr>
+        <td>
+          STUDENT NAME :
+          <input type="text" id="name" placeholder="Enter Student Name" />
+        </td>
+        <td>
+          ROLL. NUMBER :
+          <input
+            type="number"
+            id="rollno"
+            placeholder="Enter Student Roll. No."
+          />
+        </td>
+        <td>
+          DEPARTMENT :
+          <select name="DEPARTMENT" id="department">
+            <option value="BTech">BTECH</option>
+            <option value="MCA">MCA</option>
+            <option value="MBA">MBA</option>
+          </select>
+        </td>
+        <td>
+          ENROLLMENT NUMBER :
+          <input type="number" id="enrollno" placeholder="ENTER ENROLL NO." />
+        </td>
+        <td>
+          ADDRESS : 
+          <input type="text" id="address" placeholder="ENTER ADDRESS :" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          SEMESTER :
+          <input type="number" id="semester" placeholder="Enter Semester" />
+        </td>
+        <td>UPLOAD PHOTO :<input type="file" id="photograph" /></td>
+        <td>
+          MOBILE :
+          <input type="number" id="mobileno" placeholder="Enter Mobile No." />
+        </td>
+        <td>
+          FATHER NAME :
+          <input type="text" id="father" placeholder="Enter Father Name" />
+        </td>
+        <td>
+          MOTHER NAME :
+          <input type="text" id="mother" placeholder="Enter Mother Name" />
+        </td>
+        
+      </tr>
+      </tr>
+      <tr>
+        <th>SUBJECT CODE</th>
+        <th>SUBJECT NAME</th>
+        <th>MARKS OBTAINED</th>
+        <th>Out-Of</th>
+
+        <th>GRADE</th>
+
+        <th>CREDITS</th>
+        <th>Out-Of</th>
+      </tr>
+      <tr>
+        <td>KCA-101</td>
+        <td>OPERATING SYSTEM</td>
+        <td><input type="number" id="osmarks" /></td>
+        <td>100</td>
+        <td><input type="text" id="osgrade" /></td>
+        <td><input type="number" id="oscredit" /></td>
+        <td>02</td>
+      </tr>
+      <tr>
+        <td>KCA-102</td>
+        <td>THEORY OF AUTOMATA</td>
+        <td><input type="number" id="tafamarks" /></td>
+        <td>100</td>
+        <td><input type="text" id="tafagrade" /></td>
+        <td><input type="number" id="tafacredit" /></td>
+        <td>02</td>
+      </tr>
+      <tr>
+        <td>KCA-103</td>
+        <td>OBJECT ORIENTED PROGRAMMING</td>
+        <td><input type="number" id="oopsmarks" /></td>
+        <td>100</td>
+        <td><input type="text" id="oopsgrade" /></td>
+        <td><input type="number" id="oopscredit" /></td>
+        <td>02</td>
+      </tr>
+      <tr>
+        <td>KCA-104</td>
+        <td>DATA STRUCTURES AND ALGORITHMS</td>
+        <td><input type="number" id="dsamarks" /></td>
+        <td>100</td>
+        <td><input type="text" id="dsagrade" /></td>
+        <td><input type="number" id="dsacredit" /></td>
+        <td>02</td>
+      </tr>
+      <tr>
+        <td>KCA-105</td>
+        <td>DATABASE MANAGEMENT SYSTEM</td>
+        <td><input type="number" id="dbmsmarks" /></td>
+        <td>100</td>
+        <td><input type="text" id="dbmsgrade" /></td>
+        <td><input type="number" id="dbmscredit" /></td>
+        <td>02</td>
+      </tr>
+      <tr>
+        <td>KCA-106</td>
+        <td>CYBER SECURITY</td>
+        <td><input type="number" id="csmarks" /></td>
+        <td>100</td>
+        <td><input type="text" id="csgrade" /></td>
+        <td><input type="number" id="cscredit" /></td>
+        <td>02</td>
+      </tr>
+      </table>
+      <br /><br />
+     <h2 style="text-align: center">Generate Your Result</h2>
+     <br />
+     <div>
+      <button
+        style="
+          background-color: rgb(255, 201, 5);
+          padding: 15px 20px;
+          color: black;
+        "
+        onclick="result()"
+      >
+        GENERATE
+      </button>
+     </div>
+     <h1 style="text-align: center;" id="scroll"></h1>
+     <br /><br /><br /><br /><br /><br />
+     <br /><br /><br /><br /><br><br><br><br>
+
+    <div >
+      <table style="margin-left: 360px;">
+        <tr id="collegename" style="font-size: x-large; text-align:center"></tr>
+        <tr>
+          <td id="enrollno1"></td>
+          <td id="rollno1"></td>
+          <td id="department1"></td>
+          <td id="session"></td>
+          <td id="semester1"></td>
+          
+        </tr>
+        <tr>
+          <td id="name1"></td>
+          <td id="father1"></td>
+          <td id="mother1"></td>
+          <td id="mobile1"></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td id="subjectcode"></td>
+          <td id="subjectname"></td>
+          <td id="marksobtained"></td>
+          <td id="outoff1"></td>
+          <td id="grade"></td>
+          <td id="credits"></td>
+          <td id="outoff2"></td>
+        </tr>
+
+        <tr>
+          <td id="subjectcode1"></td>
+          <td id="subjectname1"></td>
+          <td id="marksobtained1"></td>
+          <td class="outoff3"></td>
+          <td id="grade1"></td>
+          <td id="credits1"></td>
+          <td class="outoff4"></td>
+        </tr>
+        <tr>
+          <td id="subjectcode2"></td>
+          <td id="subjectname2"></td>
+          <td id="marksobtained2"></td>
+          <td class="outoff3"></td>
+          <td id="grade2"></td>
+          <td id="credits2"></td>
+          <td class="outoff4"></td>
+        </tr>
+
+        <tr>
+          <td id="subjectcode3"></td>
+          <td id="subjectname3"></td>
+          <td id="marksobtained3"></td>
+          <td class="outoff3"></td>
+          <td id="grade3"></td>
+          <td id="credits3"></td>
+          <td class="outoff4"></td>
+        </tr>
+
+        <tr>
+          <td id="subjectcode4"></td>
+          <td id="subjectname4"></td>
+          <td id="marksobtained4"></td>
+          <td class="outoff3"></td>
+          <td id="grade4"></td>
+          <td id="credits4"></td>
+          <td class="outoff4"></td>
+        </tr>
+        <tr>
+          <td id="subjectcode5"></td>
+          <td id="subjectname5"></td>
+          <td id="marksobtained5"></td>
+          <td class="outoff3"></td>
+          <td id="grade5"></td>
+          <td id="credits5"></td>
+          <td class="outoff4"></td>
+        </tr>
+
+        <tr>
+          <td id="subjectcode6"></td>
+          <td id="subjectname6"></td>
+          <td id="marksobtained6"></td>
+          <td class="outoff3"></td>
+          <td id="grade6"></td>
+          <td id="credits6"></td>
+          <td class="outoff4"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td id="totalmarks"></td>
+          <td id="percentage"></td>
+          <td id="totalgrade"></td>
+          <td id="totalcredit"></td>
+          <td id="creditoutof"></td>
+        </tr>
+        <tr>
+          <td  id="ispassed"></td>
+        </tr>
+      </table>
+    </div>
+    <br /><br /><br /><br />
+
+    <div>
+      <img src="AKTU.png" height="200" width="200" />
+      <img
+        src="AICTE.webp"
+        height="200"
+        width="200"
+        style="margin-left: 50px"
+      />
+      <img src="ABES.png" height="200" width="160" style="margin-left: 50px" />
+      <img src="NAAC.png" height="200" width="200" style="margin-left: 50px" />
+      <img src="nirf.png" height="200" width="200" style="margin-left: 50px" />
+      <img src="NBA.png" height="200" width="200" style="margin-left: 50px" />
+    </div>
+    <script>
+      function result() {
+        console.log("HELLO");
+        // let alert1 = alert("Do you want to continue");
+        // let alert2 = alert("Do You Confirm Terms and Policies");
+        let scroll = "SCROLL DOWN TO SEE YOUR RESULT ->"+"<br>";
+        document.getElementById("scroll").innerHTML = scroll;
+        let collegename = "ABES ENGINEERING COLLEGE";
+        document.getElementById("collegename").innerHTML = collegename;
+        let name = document.getElementById("name").value;
+        let msg1 = "STUDENT NAME : " + name;
+        document.getElementById("name1").innerHTML = msg1;
+
+        let rollno = document.getElementById("rollno").value;
+        let msg2 = "ROLL. NUMBER : " + rollno;
+        document.getElementById("rollno1").innerHTML = msg2;
+
+        let department = document.getElementById("department").value;
+        let msg3 = "DEPARTMENT : " + department;
+        document.getElementById("department1").innerHTML = msg3;
+
+        let session = "SESSION (2022-23)";
+        document.getElementById("session").innerHTML = session;
+
+        let enrollno = document.getElementById("enrollno").value;
+        let msg4 = "ENROLL NUMBER : " + enrollno;
+        document.getElementById("enrollno1").innerHTML = msg4;
+
+        let father = document.getElementById("father").value;
+        let msg5 = "FATHER NAME : " + father;
+        document.getElementById("father1").innerHTML = msg5;
+
+        let mother = document.getElementById("mother").value;
+        let msg6 = "MOTHER NAME : " + mother;
+        document.getElementById("mother1").innerHTML = msg6;
+
+        let semester = document.getElementById("semester").value;
+        let msg7 = "SEMESTER : " + semester;
+        document.getElementById("semester1").innerHTML = msg7;
+
+         /*let photograph = document.getElementById("photograph").file;
+         let msg8 = photograph;
+         document.getElementById("photograph1").innerHTML =
+         msg8;*/
+
+        let mobileno = document.getElementById("mobile1").value;
+        let msg9 = "MOBILE NUMBER : " + mobileno;
+        document.getElementById("mobile1").innerHTML = msg9;
+
+        let subjectcode = "SUBJECT CODE";
+        document.getElementById("subjectcode").innerHTML = subjectcode;
+        let subjectname = "SUBJECT NAME";
+        document.getElementById("subjectname").innerHTML = subjectname;
+        let subjmsg3 = "MARKS OBTAIONED";
+        document.getElementById("marksobtained").innerHTML = subjmsg3;
+        let subjmsg4 = "OUT-OF";
+        document.getElementById("outoff1").innerHTML = subjmsg4;
+        let subjmsg5 = "GRADE";
+        document.getElementById("grade").innerHTML = subjmsg5;
+        let subjmsg7 = "CREDITS";
+        document.getElementById("credits").innerHTML = subjmsg7;
+        let subjmsg6 = "OUT-OF";
+        document.getElementById("outoff2").innerHTML = subjmsg6;
+
+        let codemsg1 = "KCA-101";
+        document.getElementById("subjectcode1").innerHTML = codemsg1;
+        let codemsg2 = "KCA-102";
+        document.getElementById("subjectcode2").innerHTML = codemsg2;
+        let codemsg3 = "KCA-103";
+        document.getElementById("subjectcode3").innerHTML = codemsg3;
+        let codemsg4 = "KCA-104";
+        document.getElementById("subjectcode4").innerHTML = codemsg4;
+        let codemsg5 = "KCA-105";
+        document.getElementById("subjectcode5").innerHTML = codemsg5;
+        let codemsg6 = "KCA-106";
+        document.getElementById("subjectcode6").innerHTML = codemsg6;
+
+        let subjectname1 = "OPERATING SYSTEM";
+        document.getElementById("subjectname1").innerHTML = subjectname1;
+        let subjectname2 = "THEORY OF AUTOMATA";
+        document.getElementById("subjectname2").innerHTML = subjectname2;
+        let subjectname3 = "OBJECT ORIENTED PROGRAMMING";
+        document.getElementById("subjectname3").innerHTML = subjectname3;
+        let subjectname4 = "DATA STRUCTURES";
+        document.getElementById("subjectname4").innerHTML = subjectname4;
+        let subjectname5 = "DATABASE MANAGEMENT SYSTEM";
+        document.getElementById("subjectname5").innerHTML = subjectname5;
+        let subjectname6 = "CYBER SECURITY";
+        document.getElementById("subjectname6").innerHTML = subjectname6;
+
+        let outoff3 = "100";
+        const collection = document.getElementsByClassName("outoff3");
+        for (let i = 0; i < collection.length; i++) {
+            collection[i].innerHTML = outoff3;
+        //   collection[i].style.backgroundColor = "red";
+        }
+        let outoff4 = "2";
+        const collect = document.getElementsByClassName("outoff4");
+        for (let i = 0; i < collection.length; i++) {
+            collect[i].innerHTML = outoff4;
+        //   collection[i].style.backgroundColor = "red";
+        }
+
+        let osmarks = document.getElementById("osmarks").value;
+        let msg10 = osmarks;
+        document.getElementById("marksobtained1").innerHTML = msg10;
+
+        let osgrade = document.getElementById("osgrade").value;
+        let msg11 = osgrade;
+        document.getElementById("grade1").innerHTML = msg11;
+
+        let oscredit = document.getElementById("oscredit").value;
+        let msg12 = oscredit;
+        document.getElementById("credits1").innerHTML = msg12;
+
+        let tafamarks = document.getElementById("tafamarks").value;
+        let msg13 = tafamarks;
+        document.getElementById("marksobtained2").innerHTML = msg13;
+
+        let tafagrade = document.getElementById("tafagrade").value;
+        let msg14 = tafagrade;
+        document.getElementById("grade2").innerHTML = msg14;
+
+        let tafacredit = document.getElementById("tafacredit").value;
+        let msg15 = tafacredit;
+        document.getElementById("credits2").innerHTML = msg15;
+
+        let oopsmarks = document.getElementById("oopsmarks").value;
+        let msg16 = oopsmarks;
+        console.log(msg16);
+        document.getElementById("marksobtained3").innerHTML = msg16;
+
+        let oopsgrade = document.getElementById("oopsgrade").value;
+        let msg17 = oopsgrade;
+        document.getElementById("grade3").innerHTML = msg17;
+
+        let oopscredit = document.getElementById("oopscredit").value;
+        let msg18 = oopscredit;
+        document.getElementById("credits3").innerHTML = msg18;
+
+        let dsamarks = document.getElementById("dsamarks").value;
+        let msg19 = dsamarks;
+        document.getElementById("marksobtained4").innerHTML = msg19;
+
+        let dsagrade = document.getElementById("dsagrade").value;
+        let msg20 = dsagrade;
+        document.getElementById("grade4").innerHTML = msg20;
+
+        let dsacredit = document.getElementById("dsacredit").value;
+        let msg21 = dsacredit;
+        document.getElementById("credits4").innerHTML = msg21;
+
+        let dbmsmarks = document.getElementById("dbmsmarks").value;
+        let msg22 = dbmsmarks;
+        document.getElementById("marksobtained5").innerHTML = msg22;
+
+        let dbmsgrade = document.getElementById("dbmsgrade").value;
+        let msg23 = dbmsgrade;
+        document.getElementById("grade5").innerHTML = msg23;
+
+        let dbmscredit = document.getElementById("dbmscredit").value;
+        let msg24 = dbmscredit;
+        document.getElementById("credits5").innerHTML = msg24;
+
+        let csmarks = document.getElementById("csmarks").value;
+        let msg25 = csmarks;
+        document.getElementById("marksobtained6").innerHTML = msg25;
+
+        let csgrade = document.getElementById("csgrade").value;
+        let msg26 = csgrade;
+        document.getElementById("grade6").innerHTML = msg26;
+
+        let cscredit = document.getElementById("cscredit").value;
+        let msg27 = cscredit;
+        document.getElementById("credits6").innerHTML = msg27;
+
+        let osmarks0 = parseInt(document.getElementById("osmarks").value);
+        let tafamarks0 = parseInt(document.getElementById("tafamarks").value);
+        let oopsmarks0 = parseInt(document.getElementById("oopsmarks").value);
+        let dsamarks0 = parseInt(document.getElementById("dsamarks").value);
+        let dbmsmarks0 = parseInt(document.getElementById("dbmsmarks").value);
+        let csmarks0 = parseInt(document.getElementById("csmarks").value);
+      
+        let totalmarks = osmarks0 + tafamarks0 + oopsmarks0 + dsamarks0 + dbmsmarks0 + csmarks0;
+        console.log('====================================');
+        console.log(totalmarks);
+        console.log('====================================');
+        
+        document.getElementById("totalmarks").innerHTML = "Total Marks:" + totalmarks;
+
+        let percentage = (totalmarks / 600) * 100;
+        console.log(percentage);
+        const per = `${percentage} %`
+        document.getElementById("percentage").innerHTML = per;
+
+        let oscredit0 = parseInt(document.getElementById("oscredit").value);
+        let dbmscredit0 = parseInt(document.getElementById("dbmscredit").value);
+        let dsacredit0 = parseInt(document.getElementById("dsacredit").value);
+        let oopscredit0 = parseInt(document.getElementById("oopscredit").value);
+        let cscredit0 = parseInt(document.getElementById("cscredit").value);
+        let tafacredit0 = parseInt(document.getElementById("tafacredit").value);
+
+        let totalcredit = oscredit0 + dbmscredit0 + dsacredit0 + oopscredit0 + cscredit0 + tafacredit0;
+        document.getElementById("totalcredit").innerHTML = "Total Credit:" + totalcredit;
+        
+        let outof = "12";
+        document.getElementById("creditoutof").innerHTML = outof;
+
+        let osgrade0 = document.getElementById("osgrade").value;
+        let tafagrade0 = document.getElementById("tafagrade").value;
+        let oopsgrade0 = document.getElementById("oopsgrade").value;
+        let dsagrade0 = document.getElementById("dsagrade").value;
+        let dbmsgrade0 = document.getElementById("dbmsgrade").value;
+        let csgrade0 = document.getElementById("csgrade").value;
+
+        let totalgrade = calculateTotalGrade([osgrade0, tafagrade0, oopsgrade0, dsagrade0, dbmsgrade0, csgrade0]);
+        document.getElementById("totalgrade").innerHTML = totalgrade;
+        let ispassed = percentage >= 33;
+        document.getElementById("ispassed").innerHTML = "PASS STATUS: " + (ispassed ? "Passed" : "Failed");
+      }
+      function calculateTotalGrade(grades) {
+        let totalPoints = 0;
+        let totalCredits = 0;
+      
+        for (let i = 0; i < grades.length; i++) {
+          let grade = grades[i];
+          console.log("GRADE value", grade);
+      
+          if (grade === "A") {
+            totalPoints += 10;
+          } else if (grade === "B") {
+            totalPoints += 8;
+          } else if (grade === "C") {
+            totalPoints += 6;
+          } else if (grade === "D") {
+            totalPoints += 4;
+          } else if (grade === "E") {
+            totalPoints += 2;
+          }
+      
+          totalCredits += 2; // Assuming all subjects have 2 credits
+        }
+        console.log('==========totalPoints==========================');
+        console.log(totalPoints);
+        console.log('====================================');
+      
+        let averagePoints = totalPoints / grades.length;
+        let totalGrade = "";
+      
+        if (averagePoints >= 9) {
+          totalGrade = "O";
+        } else if (averagePoints >= 8) {
+          totalGrade = "A+";
+        } else if (averagePoints >= 7) {
+          totalGrade = "A";
+        } else if (averagePoints >= 6) {
+          totalGrade = "B+";
+        } else if (averagePoints >= 5) {
+          totalGrade = "B";
+        } else if (averagePoints >= 4) {
+          totalGrade = "C";
+        } else if (averagePoints >= 3) {
+          totalGrade = "D";
+        } else if (averagePoints >= 2) {
+          totalGrade = "E";
+        } else {
+          totalGrade = "F";
+        }
+      
+        return totalGrade;
+      }
+
+
+
+      
+    </script>
+    <br /><br />
+  </body>
+</html>
